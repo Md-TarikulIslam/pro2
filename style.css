@@ -1,0 +1,357 @@
+/* Common Styles  */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    padding: 5% 10%;
+}
+.white{
+    color: white;
+}
+.blue{
+    color: #5e88fc;
+}
+.grey{
+    color: #8790af;
+}
+.black{
+    color: #333;
+}
+.center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.align-items{
+    align-items: center;
+}
+.jc-between{
+    justify-content: space-between;
+}
+.jc-even{
+    justify-content: space-evenly;
+}
+.jc-around{
+    justify-content: space-around;
+}
+
+/* Nav Style  */
+.nav-pad{
+    padding: 1%;
+   
+}
+.logo-img{
+    width: 120px;
+}
+.home{
+    background-image: url(images/header-bg.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98%;
+}
+.inline{
+    display: inline-flex;
+  
+}
+.li{
+    list-style-type:none ;
+    margin-left: 30px;
+    
+}
+.list{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+.sign-btn{
+    position: relative;
+    padding: 15px 35px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+.sign-btn:hover{
+    background-color: white;
+    color: #5e88fc;
+}
+.list:hover{
+    text-decoration: underline;
+
+}
+@media only screen and (max-width:480px) {
+    .flex, .inline{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign-btn{
+        position: relative;
+        left: 10px;
+    }
+
+}
+
+
+/* Hero Section  */
+
+.big{
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  
+}
+.medium{
+    line-height: 30px;
+    margin-bottom: 20PX;
+}
+.phone-img{
+    position: relative;
+    top: 163px;
+}
+.download-btn{
+    padding: 15px 45px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#5e88fc;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.download-btn:hover{
+    color: white;
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1), rgba(106, 198, 240, 1));
+}
+@media only screen and (max-width:480px){
+    .phone-img{
+        top: 80px;
+    }
+    .res-pad{
+        padding: 0 4%;
+    }
+
+}
+
+
+/* About Section  */
+.about-img{
+    padding-top: 200px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sbig{
+    font-size: 40px;
+    margin-top: 30px;
+    padding: 0 300px;
+    margin-bottom: 30px;
+}
+.small{
+    font-size: 20px;
+    padding: 0 300px;
+    margin-bottom: 200px;
+}
+@media only screen and (max-width:480px){
+    .sbig, .small{
+       padding: 0 10px;
+    }
+}
+
+
+/* Application Start  */
+.bg-staff{
+    background-image: url(images/progress-bg.jpg.webp);
+    background-repeat: no-repeat;
+    background-color: #f5f6ff;
+    background-position: right;
+    height: 600px;
+}
+.h2-style{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.app{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.app-staff{
+    position: relative;
+    top: 140px;
+}
+.learn-btn{
+    color: white;
+    padding: 15px 45px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1), rgba(106, 198, 240, 1));
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+}
+.learn-btn:hover{
+   
+    box-shadow: 5px 10px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.app-img{
+    position: relative;
+    bottom: 90px;
+    right: 150px;
+}
+@media only screen and (max-width:480px){
+    .app-img{
+        display: none;
+    }
+    .app{
+        color: black;
+        padding: 0 20px;
+    }
+}
+
+
+/* Video Section  */
+.bg2-staff{
+    background-image: url(images/video-bg.jpg.webp);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-top: 200px;
+    height: 650px;
+}
+.vid-img{
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+}
+.play-btn{
+    position: relative;
+    right: 350px;
+    bottom: 80px;
+}
+@media only screen and (max-width:480px){
+    .vid-img{
+        width: 70%;
+        left: 60px;
+    }
+    .play-btn{
+        right: 120px;
+        top: 40px;
+        width: 70px;
+    }
+}
+
+
+/* Features section  */
+.blue-icon{
+    color: #5e88fc;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-right:20px ;
+    padding: 15px 20px;
+    border: 1px solid red;
+    border: none;
+    box-shadow: 0px 0px 30px 1px black ;
+}
+.all-pad{
+    position: relative;
+    top: 200px;
+}
+.d-flex{
+    display: flex;
+}
+.p-n{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.padding{
+    padding-bottom: 80px;
+}
+.blue-icon:hover{
+    color: white;
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1), rgba(106, 198, 240, 1));
+}
+@media only screen and (max-width:480px){
+.d-flex{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+}
+
+/* Download section  */
+.download-bg{
+    background-image: url(images/download-bg.png.webp);
+    margin-top: 300px;
+    background-repeat: no-repeat;
+}
+.dn-img{
+    position: relative;
+    bottom: 180px;
+}
+.dn-info{
+    padding-top: 100px;
+    padding-left: 150px;
+}
+.com-btn{
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: none;
+}
+.com-btn:hover{
+    color: white;
+    background:linear-gradient(45deg, rgba(72, 44, 191, 1), rgba(106, 198, 240, 1)); ;
+}
+@media only screen and (max-width:480px){
+    .dn-img{
+        display: none;
+    }
+    .dn-info{
+        padding-left: 0;
+        padding-top: 0px;
+       
+    }
+    .com-btn{
+       
+        margin-bottom: 10px;
+
+    }
+}
+
+
+/* Price section  */
+/* .half-container{
+border: 1px solid red;
+padding: 30% 100%;
+background-color: #f2f3fc;
+
+}
+.full-container{
+    border: 1px solid black;
+    padding: 0% 10% 10% 0;
+}
+.fa-rocket{
+    text-align: center;
+    font-size: 50px;
+    color: #5e88fc;
+    
+}
+.centered{
+    text-align: center;
+    padding-left: 50px;
+} */
