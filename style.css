@@ -4,6 +4,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    
 }
 .container{
     padding: 5% 10%;
@@ -335,23 +337,197 @@
 
 
 /* Price section  */
-/* .half-container{
-border: 1px solid red;
-padding: 30% 100%;
+.full-container{
+    box-shadow: 0px 0px 2px 0px black;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    }
+.half-container{
+padding: 40px 0;
+border-radius:15px ;
 background-color: #f2f3fc;
 
 }
-.full-container{
-    border: 1px solid black;
-    padding: 0% 10% 10% 0;
+.half2-container{
+    padding: 80px;
 }
-.fa-rocket{
-    text-align: center;
+.pp{
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.icon{
+    position: relative;
+    left: 20px;
     font-size: 50px;
     color: #5e88fc;
+    margin-left: 130px;
+    margin-bottom: 30px;
     
 }
-.centered{
+.fa-dollar-sign{
+    position: relative;
+    bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.amount{
+    font-size: 50px;
+}
+.purchase-btn{
+    padding: 15px 45px;
+    border-radius: 50px;
+    border: 2px solid linear-gradient(45deg, rgba(72, 44, 191, 1), rgba(106, 198, 240, 1));;
+    font-size: 16px;
+    font-weight: 600;
+    color:#5e88fc;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.purchase-btn:hover{
+    color: white;
+    background: linear-gradient(45deg, rgba(72, 44, 191, 1), rgba(106, 198, 240, 1));
+}
+.full-container:hover{
+    box-shadow: 0 0 20px 5px black;
+}
+@media only screen and (max-width:480px){
+    .blank{
+        margin-top: 100px;
+    }
+}
+
+/* Subscrbe for more  */
+.sub-bg{
+    background-image: url(images/subscribe-bg.jpg.webp);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+}
+.upper-sub{
+    margin-top: 30px;
+}
+.inner-sub{
+    position: relative;
+    top: 150px;
+    left: 350px;
+    padding: 30px;
+    background-color: white;
+    width: 800px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.h2-sub{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 30px;
     text-align: center;
-    padding-left: 50px;
-} */
+    background-image:linear-gradient(45deg, rgba(72, 44, 191, 1), rgba(106, 198, 240, 1)); ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.emailbox{
+    margin-left: 90px;
+    font-size: 15px;
+    padding: 15px 400px 15px 20px;
+    border-radius: 50px;
+    text-align: left;
+    /* background-image:linear-gradient(45deg, rgba(72, 44, 191, 1), rgba(106, 198, 240, 1)); ; */
+  
+}
+.sub-more-btn{
+    border-radius: 50px;
+    padding: 18px 50px;
+    background-image:linear-gradient(45deg, rgba(72, 44, 191, 1), rgba(106, 198, 240, 1)); ;
+    border: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    left: 510px;
+    bottom: 53px;
+}
+@media only screen and (max-width:480px){
+    .sub-bg{
+        height: 600px;
+        margin-bottom: 100px;
+    }
+    .inner-sub{
+        left: 15px;
+        width: 300px;
+    }
+    .h2-sub{
+        padding-top:20px ;
+    }
+    .emailbox{
+        margin-left: 0;
+       padding: 15px 100px 15px 10px;
+    }
+    .sub-more-btn{
+        left: 200px;
+        padding: 18px 10px ;
+    }
+}
+
+/* Contact section  */
+.contact{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contact-container{
+    padding: 20px;
+    margin-bottom: 200px;
+}
+.find{
+    font-size: 40px;
+}
+.c-icon{
+    font-size: 30px;
+    margin: 50px 0px 50px 90px;
+    padding: 15px 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 black;
+
+}
+
+
+/* Footer section  */
+.foo{
+    border: 1px solid  #5e88fc;
+    background-color: #f5f6ff;
+    padding: 50px 0;
+}
+
+
+.top {
+    --offset: 50px; 
+    
+    /* position: sticky; */
+    bottom: 60px;      
+    margin-left:1400px; 
+    place-self:end;
+    margin-top: calc(100vh + var(--offset));
+  
+    
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 30px;
+    font-weight: 900;
+    color:  white;
+    background:#5e88fc;
+    border-radius: 10px;
+ 
+  }
+
+  @media only screen and (max-width:480px){
+.top{
+  margin-left: 300px;
+}
+  
+}
